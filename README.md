@@ -1,2 +1,2 @@
-# DSA-Coding-Ninjas
+# DSA cpp
 DSA solution
