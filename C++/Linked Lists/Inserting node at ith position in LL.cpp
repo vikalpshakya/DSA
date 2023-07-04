@@ -57,6 +57,7 @@ Node* insertNode(Node *head,int i,int data){
         temp->next =newNode;
         newNode->next=a;
         }
+    return head;
 }
 /*-----------------------------------------------------------------*/
 int main() {
