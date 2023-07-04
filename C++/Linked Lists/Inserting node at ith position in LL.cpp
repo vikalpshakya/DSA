@@ -39,17 +39,24 @@ Node* takeInput(){
     }  
 /*-------------Function to insert a node in Link list----------*/
 
-void insertNode(Node *head,int i,int data){
+Node* insertNode(Node *head,int i,int data){
         Node *newNode = new Node(data);
         int count = 0;
         Node*temp = head;
-        while(count<i-1){
+        if (i==0){                // different case for inserting node at 0th position
+            newNode->next = head;
+            head=newNode;
+            return head;
+        }
+        while(temp!=NULL && count<i-1){
             temp = temp->next;
             count++;
         }
+        if(temp!=NULL){
         Node *a= temp->next;
         temp->next =newNode;
         newNode->next=a;
+        }
 }
 /*-----------------------------------------------------------------*/
 int main() {
