@@ -1,4 +1,22 @@
 //Everything is being done in order 0(n) time complexity 
+
+/************************************************************
+ 
+    Following is the structure of the node class 
+ 
+    class Node {
+    	public :
+    	int data;
+    	Node *next;
+
+    	Node(int data) {
+        	this->data = data;
+        	next = NULL;
+    	}
+	};
+
+**************************************************************/
+
 class Queue {	// Define the data members
 	Node*head;
 	Node*tail;
