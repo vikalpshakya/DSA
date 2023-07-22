@@ -1,6 +1,6 @@
 /*
-    Time complexity: O(N)
-    Space complexity: O(H)
+   	 Time complexity: O(N)
+   	 Space complexity: O(H)
 
     where N is the number of nodes in the input BST and 
     H is the height of the input BST
