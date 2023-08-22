@@ -9,7 +9,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void kSortedArray( int input[], int n, int k) {
+void kSortedArray( int input[], int n, int k) {  
     priority_queue<int> pq;
     for(int i = 0; i < k ; i++) {
         pq.push(input[i]);
