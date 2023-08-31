@@ -14,7 +14,7 @@
         	next = NULL;
     	}
 	};
-
+ 
 **************************************************************/
 
 class Queue {	// Define the data members
