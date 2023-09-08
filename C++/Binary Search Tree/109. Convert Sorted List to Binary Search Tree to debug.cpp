@@ -6,7 +6,7 @@ public:
         if(!head) {
             p.first = NULL;
             p.second = NULL;
-            return p;
+            return p; 
         }
         ListNode* temp = head;
         ListNode* slow = head;
