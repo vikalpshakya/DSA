@@ -2,6 +2,28 @@
 using namespace std;
 
 int main(){
+    int v; cin >> v; // 8
+    vector<int> adj[v + 1]; // 8 + 1
+    int e; cin >> e; // 9
+    
+    for(int i = 0; i < e; i++){
+        int u, v; cin >> u >> v;
+    // u->v;
+    // 8->6
+        adj[u].push_back(v);
+    }
+    for(int i = 0; i < e; i++){
+        for(int j: adj[i]){ // for(int i: arr)
+            cout << "edge from " << i << " " << " to " << j << endl;
+        }
+    }
+    return 0;
+}
+// -------------------------------------------------------------------------------------------------------//
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
     int v; cin >> v; // 8 used to store the no. of vertexes or no of nodes
     vector<pair<int, int>> adj[v + 1]; // 8 + 1
     int e; cin >> e; // 9 no of edges
