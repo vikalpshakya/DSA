@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int v; cin >> v; // 8
-    vector<int> adj[v + 1]; // 8 + 1
+    vector<int> adj[v + 1]; // 8 + 1 
     int e; cin >> e; // 9
     
     for(int i = 0; i < e; i++){
