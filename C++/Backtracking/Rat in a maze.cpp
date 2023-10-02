@@ -5,7 +5,7 @@
 	down cell (x+1, y), left cell (x, y-1) and right cell (x, y+1).
 */
 
-// Time complexity: O(4*(n^2)), Space complexity: O(n^2)
+// Time complexity: O(4^(n^2)), Space complexity: O(n^2)
 
 
 #include<bits/stdc++.h>
