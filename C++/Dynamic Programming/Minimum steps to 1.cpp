@@ -19,7 +19,7 @@ int countMinStepsToOne(int n){
 
 	return 1+ min(a,min(b,c));
 }
-// ---------------APPROACH 3 [DP+memoisation] ----------------//
+// ---------------APPROACH 2 [DP+memoisation] ----------------//
 
 // ----Time Complexity: O(n), Space complexity: O(n)---------//
 int countMinStepsToOne_mem(int n,vector<int>&dp){
