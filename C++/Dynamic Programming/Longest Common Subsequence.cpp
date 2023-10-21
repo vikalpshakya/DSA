@@ -7,7 +7,7 @@ class Solution {
         // Base case
         if(a.size() == 0 || b.size() == 0) return 0;
         
-        if(a[0] == b[0]) 
+        if(a[0] == b[0])  
             return 1+ lcs(a.substr(1), b.substr(1));
         else{
             int ans1 = lcs(a.substr(1), b);
