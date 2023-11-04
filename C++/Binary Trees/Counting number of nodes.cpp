@@ -1,5 +1,5 @@
 //     Time complexity: O(N)
-//     Space complexity: O(N) 
+//     Space complexity: O(N)  
 
 int numNodes(BinaryTreeNode<int>* root) {
   if ( root == NULL ) return 0;
