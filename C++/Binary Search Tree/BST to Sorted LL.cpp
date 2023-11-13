@@ -1,6 +1,6 @@
 /*    Time complexity: O(N)
       Space complexity: O(H)      */
-
+ 
 void inOrderTraversal(BinaryTreeNode<int>*root ,vector<int>&ans){
 	if(!root) return;
 	inOrderTraversal(root->left, ans);
