@@ -4,7 +4,7 @@ void spiralPrint(int **input, int nRows, int nCols)
     int left = 0 , right = nCols-1 ;
 
     while ( top <= buttom && left <=  right){
-
+ 
         for ( int i = left ; i <= right ; i++){
             cout << input [top][i] <<" ";
         }   top ++ ;
