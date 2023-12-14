@@ -8,7 +8,13 @@ Steps:
             ~ Decrement the indegree of its ajdacent vertices by 1
             ~ If indegree of any vertex become 0, push that vertex into the queue
     4. Stop once the queue is empty. Noe print the topoSort vector
-*/     
+   
+
+THIS LOGIC WILL WORK ONLY FOR DGA (DIRECTED,ALICYCLIC GRAPHS)
+THEREBY , TO CHECK THE PRESENCE OF THE CYCLE WE CAN USE A VISITED COUNT ,
+  AND INCREMENT IT INSIDE THE WHILE LOOP .
+  AT THE END IF COUNT == N, THEN IT'S A D.A.G, ELSE WE CAN SAY THAT THE GIVEN GRAPH HAS A CYCLE 
+*/  
 
 // Time complexity: O(V+E), Space complexity: O(V) 
 
