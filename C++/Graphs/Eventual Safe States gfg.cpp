@@ -42,3 +42,58 @@ class Solution {
         return ans;
     }
 };
+
+//----    ---------APPROACH 2 USING KAHN'S ALGO AND TOPO SORT ------------------------//
+// SUBMITTED ON LEETCODE
+/*
+Intution: Nodes which are part of any cycle would be considered as unsafe nodes , 
+          Hence we would find all the safe nodes ie.. which are not involved in cycle and return them.
+          The reason behind reversing the graph is that. because if we dont reverse then we wont be able to 
+          traverse the graph since we are working here on outgoing edges . 
+*/
+
+
+class Solution {
+public:
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        int n = graph.size();
+        vector<int>adj[n];
+        for(int i = 0; i < n; i++){
+            for(auto j : graph[i])
+                adj[j].push_back(i);
+        }
+
+        vector<int>indeg(n,0);
+
+        for(auto i: adj){
+            for(auto j: i)
+                indeg[j]++;
+        }
+        queue<int>q;
+        for(int i = 0; i < n; i++){
+            if(indeg[i] == 0){
+                q.push(i);
+            }
+        }
+
+        while(!q.empty()){
+            int front = q.front();
+            q.pop();
+
+            for(auto i: adj[front]){
+                indeg[i]--;
+                if(indeg[i] == 0)
+                    q.push(i);
+            }
+        }
+
+        vector<int>safeNodes;
+        // Nodes whose indegree == 0 means they are not part on any cycle
+        for(int i = 0; i < n; i++){
+            if(indeg[i] ==  0)
+                safeNodes.push_back(i);
+        }
+        return safeNodes;
+
+    }
+};
