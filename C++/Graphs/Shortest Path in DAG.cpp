@@ -1,4 +1,5 @@
 // problem link: https://www.codingninjas.com/studio/problems/shortest-path-in-dag_8381897
+// Time Complexity: O(N+E), Space Complexity: O(N+E)
 
 void getTopo(int n, vector<pair<int, int>> adj[], vector<bool>& visited, stack<int>& st, int sv) {
     visited[sv] = true;
