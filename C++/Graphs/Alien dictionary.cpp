@@ -47,7 +47,7 @@ string getAlienLanguage(vector<string> &words, int k) {
     vector<int>topo = topoSort(k,adj);
     string ans = "";
     for(auto i : topo){
-        ans.push_back(char(i+'a'));
+        ans.push_back(char(i+'a'));  
     }
     return ans;
 
