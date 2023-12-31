@@ -25,7 +25,7 @@ int findMSB_app1(int n) {       // Naive approach
 
 int findMSB_app2(int n) {      // Efficient approach
   
-    for(int i = 1; i <= 16; i*=2){
+    for(int i = 1; i <= 32; i*=2){
         n |= n >> i;
     }
   
