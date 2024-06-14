@@ -1,4 +1,5 @@
-// Time complexity =O(nlogn) , space O(n)
+#include<bits/stdc++.h>
+using namespace std;
 void merge2array(vector<int>&arr,int s , int e){
     vector<int>output(e-s+1);
     
@@ -31,4 +32,15 @@ void mergeSort(vector<int>& arr, int s, int e) {  //3
     mergeSort(arr,s, mid);
     mergeSort(arr,mid+1, e);  
     merge2array(arr,  s, e);
+}
+
+int main() {
+    int n; cin >> n;
+    vector<int>vec(n);
+    for(auto &i : vec) cin >> i;
+
+    mergeSort(vec,0,n);
+
+    for(auto i: vec) cout << i << " ";
+
 }
