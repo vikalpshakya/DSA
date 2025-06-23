@@ -1,8 +1,4 @@
-// #include<bits/stdc++.h>
-#include<iostream>
-#include<vector>
-#include<map>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 const int MAX = 5e6;
