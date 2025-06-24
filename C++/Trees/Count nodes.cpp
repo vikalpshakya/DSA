@@ -1,11 +1,10 @@
-//     QUES. Given a tree and an integer x, find and return the number of nodes which contains data greater than x.
+// Time complexity O(n) ; space O(n)  
 
-int getLargeNodeCount(TreeNode<int>* root, int x) {
-    int count = 0;
-    if(root->data > x)
-        count+=1;
-    for( int i =0 ; i < root->children.size() ; i++){
-        count+=getLargeNodeCount(root->children[i],x);
+int numNodes(TreeNode<int>*root){
+    if(root==NULL) return 0;
+    int ans = 1;  // length of main root = 1
+    for( int i = 0; i < root->children.size(); i++){
+        ans += numsNodes(root->children[i]); // recursion will find the number of nodes in the children nodes
     }
-    return count ;
+    return ans;
 }
