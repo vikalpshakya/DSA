@@ -2,7 +2,7 @@
 using namespace std;
 int n, d; 
 
-/*
+
 int brute(vector<int>&vec) { // O(n^3)
     int count = 0;
 
@@ -17,7 +17,7 @@ int brute(vector<int>&vec) { // O(n^3)
     }
     return count;
 }
-*/
+
 
 int countTriplets(vector<int>&vec) { // TC: O(n)
     
@@ -31,7 +31,7 @@ int countTriplets(vector<int>&vec) { // TC: O(n)
         if(head-tail >= 2) {
             int len = head-tail-1;
 
-            ans += len*(len+1)/2;
+            ans += len*(len+1)/2;   // add all pairs in the range too
         }
 
         tail++;
@@ -47,5 +47,5 @@ int main() {
     for(int i = 0; i < n; i++) cin >> vec[i];
 
     cout << countTriplets(vec) << endl;
-    // cout << brute(vec) << endl;
+    cout << brute(vec) << endl;
 }
