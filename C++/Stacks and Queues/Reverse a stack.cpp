@@ -1,6 +1,6 @@
 // reverse the elements in the input stack in the input stack itself using an extra stack
 
-// Time complexity O(n^2) , space complexity O(n)
+// Time complexity O(n^2) , space complexity O(n) [recursive stack space only]
 
 void insertAtBottom(stack<int>&st, int f) {
 
@@ -10,7 +10,7 @@ void insertAtBottom(stack<int>&st, int f) {
     }
     int x = st.top();
     st.pop();
-    
+
     insertAtBottom(st, f);
     st.push(x);
 }

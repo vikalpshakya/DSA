@@ -6,7 +6,7 @@ class minStack {
         stack<pair<int,int>>st;
 
     minStack(){
-       cout <<  "Constructer called\n";
+    //    cout <<  "Constructer called\n";
     }
 
     void push(int m) {
@@ -46,7 +46,7 @@ int main() {
     minStack st;
     
     while(true) {
-        
+
         int op; cin >> op;
         if(op == 5) break;
 
