@@ -8,7 +8,7 @@ class ComplexNumbers {
          this->imaginary=imaginary;
                                             }
         void print(){
-       cout<<this->real<<" + i"<<this->imaginary<<endl;
+         cout<<this->real<<" + i"<<this->imaginary<<endl;
                                                                 }
                                                                     
         void plus(ComplexNumbers const &c2){

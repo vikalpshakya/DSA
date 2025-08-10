@@ -44,7 +44,6 @@ vector<int> maxCombinations(int n ,int k, vector<int>&a, vector<int>&b) {
 
 
 
-
 int main() {
     int n, k;
     cin >> n >> k;
