@@ -3,6 +3,9 @@ using namespace std;
 
 // using seperate chaining
 
+// Avg case TC: O(1) 
+
+
 class HashMap{
     private:
         int size = 17;                            // any prime number
